@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+<div id="game">
+    <h1>Psychic Game</h1>
+    <h2>Press any key to guess what letter I am thinking of...</h2>
+</div>
+
+    <script type="text/javascript">
+
+        var options = ["l", "p",]
+        var wins = 0;
+        var losses = 0;
+        var left = 0;
+        var sofar = 0;
+
+        document.onkeyup = function () {
+            var userguess = String.fromCharCode(event.keyCode).toLowerCase();
+
+
+
+
+
+            
+
+            var computerGuess = options[Math.floor(Math.random() * options.length)];
+            
+            if (userguess == 'l' || userguess == 'p') {
+                wins++;
+                
+            }
+           if ((userguess=='k') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='a') && (computerGuess=='l')) {
+               losses++;}
+               if ((userguess=='b') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='c') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='d') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='e') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='f') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='g') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='h') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='i') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='j') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='m') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='n') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='o') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='q') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='r') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='s') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='t') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='u') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='v') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='w') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='x') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='y') && (computerGuess=='l')) {
+               losses++;}
+              if ((userguess=='z') && (computerGuess=='l')) {
+               losses++;}
+               if((userguess=='k') && (computerGuess=='p')) {
+               losses++;}
+               if((userguess=='a') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='b') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='c') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='d') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='e') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='f') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='g') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='h') && (computerGuess=='p')) {
+               losses++;}
+               if((userguess=='i') && (computerGuess=='p')) {
+               losses++;}
+               if((userguess=='j') && (computerGuess=='p')) {
+               losses++;}
+               if((userguess=='m') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='n') && (computerGuess=='p')) {
+               losses++;}
+               if((userguess=='o') && (computerGuess=='p')) {
+               losses++;}
+               if((userguess=='q') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='r') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='s') && (computerGuess=='p')) {
+               losses++;}
+               if((userguess=='t') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='u') && (computerGuess=='p')) {
+               losses++;}
+               if((userguess=='v') && (computerGuess=='p')) {
+               losses++;}
+               if((userguess=='w') && (computerGuess=='p')) {
+               losses++;}
+             if  ((userguess=='x') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='y') && (computerGuess=='p')) {
+               losses++;}
+              if ((userguess=='z') && (computerGuess=='p')) {
+               losses++;}
+               
+           
+
+           var html = "<p>Wins: " + wins + "</p>" +
+           "<p>Losses: " + losses + "</p>"+
+           "<p>Left: " + left + "</p>"+
+           "<p>So Far: " + sofar + "</p>";
+
+           document.querySelector('#game').innerHTML = html;
+        }
+
+    </script>
+
+</body>
+
+</html>
